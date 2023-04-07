@@ -25,7 +25,7 @@
                 </a>
                 <ul class="site-nav list">
                     <li>
-                        <a class="nav-link nav-link-active  link" href="./index.html">Studio</a>
+                        <a class="nav-link nav-link-active link" href="./index.html">Studio</a>
                     </li>
                     <li>
                         <a class="nav-link  link" href="./portfolio.html">Portfolio</a>
@@ -37,8 +37,8 @@
             </nav>
             <address class="adress-info">
                 <ul class="auth-nav list">
-                    <li>
-                        <a class="auth-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li >
+                        <a class="auth-link  link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
                         <a class="auth-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -57,7 +57,7 @@
             <div class="business-container container">
 
                 <h1 class="business-title">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button class="button" type="button" data-modal-open>Order Service</button>
 
 
             </div>
@@ -415,6 +415,20 @@
         
 
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>
+                <svg class="close-button-icon" width="8" height="8" >
+                    <use href="/images/symbol-defs.svg#icon-close-black" >
+                        
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
